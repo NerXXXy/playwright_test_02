@@ -9,4 +9,7 @@ const {chromium,devices} = require('playwright');
 
     await page.goto('https://www.google.com')
 
+    await context.close()
+    await browser.close()
+
 }) ()
