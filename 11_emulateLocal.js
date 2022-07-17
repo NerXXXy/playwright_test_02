@@ -12,4 +12,7 @@ const {chromium} = require('playwright');
 
     await page.goto('https://www.thetimezoneconverter.com/')
 
+    await context.close()
+    await browser.close()
+
 }) ()
