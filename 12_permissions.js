@@ -17,4 +17,8 @@ const {chromium} = require('playwright');
     await page.goto('https://www.maps.ie/coordinates.html')
     await page.click('#find-loc')
 
+
+    await context.close()
+    await browser.close()
+
 }) ()
