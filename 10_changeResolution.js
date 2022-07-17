@@ -10,6 +10,9 @@ const {chromium} = require('playwright');
     page.setViewportSize({width: 1600 , height: 1200})
     page.goto('https://todomvc.com/examples/react/#/')
 
+    await context.close()
+    await browser.close()
+
 
 
 
